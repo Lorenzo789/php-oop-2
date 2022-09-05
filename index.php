@@ -30,7 +30,7 @@
     $cucciagrande = new DogHouse('cuccia', 90, 10, 'cemento', '50cm');
     var_dump($cucciagrande);
 
-
-
+    $cibo = new Food('crocchette', 60, 8.5, '10kg', 'cat', 'vongole', 'verdure', 'coniglio', 'ricci di mare');
+    var_dump($cibo);
 
 ?>
