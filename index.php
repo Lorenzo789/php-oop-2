@@ -30,17 +30,14 @@
     include __DIR__ . '/classes/shoppingCart.php';
     
     $cucciagrande = new DogHouse('cuccia', 90, 10, 'cemento', '50cm');
-    var_dump($cucciagrande);
 
     $cibo = new Food('crocchette', 60, 8.5, '10kg', 'cat', 'vongole', 'verdure', 'coniglio', 'ricci di mare');
-    var_dump($cibo);
 
     $card1 = new Card('guest', '1111222233334444', 100, 445, '22/04/23');
     $card2 = new Card('piero fame', '5555666677778888', 100, 558, '30/07/28');
 
     $guest = new User($card1, 'guest');
     $piero = new RegisteredUser('piero', $card2, 'pfame', 'password', 'via delle cipolle 34');
-    var_dump($piero);
 
     $cartGuest = new ShoppingCart($cucciagrande, $guest);
     var_dump($cartGuest);
@@ -49,5 +46,6 @@
     var_dump($cartPiero);
 
     var_dump($cartPiero->getCartTotal($cucciagrande, $piero, $card2));
+    var_dump($cartGuest->getCartTotal($cucciagrande, $guest, $card1));
 
 ?>

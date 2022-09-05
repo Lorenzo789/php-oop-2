@@ -20,7 +20,7 @@ class ShoppingCart{
 
         $finalPrice = $cardBalance - $price;
 
-        if (empty($_user->getUsername())) {
+        if ($_user->getUsername() !== null) {
             $discountPrice = $price * 20 / 100; 
             return $discountPrice;
         } else {

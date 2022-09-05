@@ -17,5 +17,5 @@ class User{
         $this->name = $_name;
     }
 
-    
+
 };
