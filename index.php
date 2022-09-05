@@ -42,11 +42,12 @@
     $piero = new RegisteredUser('piero', $card2, 'pfame', 'password', 'via delle cipolle 34');
     var_dump($piero);
 
-    $cartGuest = new ShoppingCart($cibo, $guest);
+    $cartGuest = new ShoppingCart($cucciagrande, $guest);
     var_dump($cartGuest);
 
-    $cartPiero = new ShoppingCart($cibo, $piero);
+    $cartPiero = new ShoppingCart($cucciagrande, $piero);
     var_dump($cartPiero);
-    
-    var_dump($cartPiero->getCartTotal($cucciagrande, $piero, $card2));
+
+    var_dump($cartPiero->getCartTotal($cucciagrande, $piero, $card2))
+
 ?>

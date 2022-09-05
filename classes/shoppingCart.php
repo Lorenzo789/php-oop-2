@@ -13,7 +13,14 @@ class ShoppingCart{
     }
 
     function getCartTotal($_product, $_user, $card){
-        $_product->getPrice() - $_user->getCardData($card->getBalance());
+
+        $price = $_product->getPrice();
+
+        $cardBalance = $card->getBalance();
+
+        $finalPrice = $cardBalance - $price;
+
+        return $finalPrice;
     }
 
 };
