@@ -23,6 +23,7 @@
     include __DIR__ . '/classes/product.php';
     include __DIR__ . '/classes/dogHouse.php';
     include __DIR__ . '/classes/food.php';
+    include __DIR__ . '/classes/toy.php';
 
     $prodotto = new Product('palla', 59, 5);
     var_dump($prodotto);
@@ -32,5 +33,8 @@
 
     $cibo = new Food('crocchette', 60, 8.5, '10kg', 'cat', 'vongole', 'verdure', 'coniglio', 'ricci di mare');
     var_dump($cibo);
+
+    $palla = new Toy('palla', 10, 5, 'gomma', 'rosso', 'cane');
+    var_dump($palla);
 
 ?>
