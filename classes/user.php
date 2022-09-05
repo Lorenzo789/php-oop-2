@@ -5,14 +5,19 @@
  */
 class User{
 
+    protected $cardData;
     protected $name;
-    protected $surname;
 
     /**
      * construct class user
      */
-    function __construct($_name, $_surname,){
+    function __construct($_cardData, $_name){
+
+        $this->cardData = $_cardData;
         $this->name = $_name;
-        $this->surname = $_surname;
+    }
+
+    function getCardData(){
+        $this->cardData;
     }
 };
