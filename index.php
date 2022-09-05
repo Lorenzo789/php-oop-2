@@ -48,6 +48,6 @@
     $cartPiero = new ShoppingCart($cucciagrande, $piero);
     var_dump($cartPiero);
 
-    var_dump($cartPiero->getCartTotal($cucciagrande, $piero, $card2))
+    var_dump($cartPiero->getCartTotal($cucciagrande, $piero, $card2));
 
 ?>

@@ -17,7 +17,5 @@ class User{
         $this->name = $_name;
     }
 
-    function getCardData(){
-        $this->cardData;
-    }
+    
 };

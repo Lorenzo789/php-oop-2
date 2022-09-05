@@ -17,4 +17,8 @@ class RegisteredUser extends User {
         $this->password = $_password;
         $this->address = $_address;
     }
+
+    function getUsername(){
+        return $this->userName;
+    }
 }
