@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,5 +15,22 @@
     Il pagamento avviene con la carta di credito, che non deve essere scaduta.
     BONUS:
     Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibili solo in un periodo particolare (es. da maggio ad agosto). -->
+    <h1>PHP OOP 2</h1>
 </body>
 </html>
+
+<?php
+    include __DIR__ . '/classes/product.php';
+    include __DIR__ . '/classes/dogHouse.php';
+    include __DIR__ . '/classes/food.php';
+
+    $prodotto = new Product('palla', 59, 5);
+    var_dump($prodotto);
+    
+    $cucciagrande = new DogHouse('cuccia', 90, 10, 'cemento', '50cm');
+    var_dump($cucciagrande);
+
+
+
+
+?>
